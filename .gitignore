@@ -1,6 +1,7 @@
 .idea
 /bin/behat
 /bin/google-cloud-batch
+/key/*
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php

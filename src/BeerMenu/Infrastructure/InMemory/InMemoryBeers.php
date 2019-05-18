@@ -4,11 +4,12 @@ declare(strict_types=1);
 
 namespace App\BeerMenu\Infrastructure\InMemory;
 
+use App\BeerMenu\Infrastructure\Resetter;
 use App\BeerMenu\Model\Beer;
 use App\BeerMenu\Model\Beers;
 use App\BeerMenu\Query\CurrentMenuQuery;
 
-class InMemoryBeers implements Beers, CurrentMenuQuery
+class InMemoryBeers implements Beers, CurrentMenuQuery, Resetter
 {
     private $beers = [];
 
@@ -25,5 +26,10 @@ class InMemoryBeers implements Beers, CurrentMenuQuery
     public function stockOut(string $beerName): void
     {
         unset($this->beers[$beerName]);
+    }
+
+    public function reset(): void
+    {
+        $this->beers = [];
     }
 }

@@ -5,5 +5,7 @@ services:
     build:
       context: ./
       dockerfile: docker/php/Dockerfile
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/var/www/beer-menu/key/key.json
     volumes:
       - .:/var/www/beer-menu

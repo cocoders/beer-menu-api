@@ -2,14 +2,12 @@
 
 namespace App\Tests\Behat;
 
+use App\BeerMenu\Infrastructure\Resetter;
 use App\BeerMenu\Model\Beer;
 use App\BeerMenu\Model\Beers;
 use App\BeerMenu\Query\CurrentMenuQuery;
 use Behat\Behat\Context\Context;
-use Behat\Behat\Tester\Exception\PendingException;
-use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
-use Symfony\Component\HttpKernel\KernelInterface;
 
 /**
  * Defines application features from the specific context.
@@ -18,14 +16,25 @@ class FeatureContext implements Context
 {
     private $beers;
     private $currentMenuQuery;
+    private $resetter;
 
     public function __construct(
         Beers $beers,
-        CurrentMenuQuery $currentMenuQuery
+        CurrentMenuQuery $currentMenuQuery,
+        Resetter $resetter
     )
     {
         $this->beers = $beers;
         $this->currentMenuQuery = $currentMenuQuery;
+        $this->resetter = $resetter;
+    }
+
+    /**
+     * @BeforeScenario
+     */
+    public function beforeScenario()
+    {
+        $this->resetter->reset();
     }
 
     /**

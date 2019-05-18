@@ -5,3 +5,8 @@ services:
 
     App\Tests\Behat\:
         resource: '../tests/Behat/*'
+
+    App\BeerMenu\Model\Beers: '@App\BeerMenu\Infrastructure\InMemory\InMemoryBeers'
+    App\BeerMenu\Query\CurrentMenuQuery: '@App\BeerMenu\Infrastructure\InMemory\InMemoryBeers'
+    App\BeerMenu\Infrastructure\Resetter: '@App\BeerMenu\Infrastructure\InMemory\InMemoryBeers'
+
