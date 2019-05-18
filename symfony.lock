@@ -11,6 +11,9 @@
     "container-interop/container-interop": {
         "version": "1.2.0"
     },
+    "firebase/php-jwt": {
+        "version": "v5.0.0"
+    },
     "friends-of-behat/symfony-extension": {
         "version": "2.0",
         "recipe": {
@@ -26,6 +29,42 @@
             "tests/Behat/DemoContext.php"
         ]
     },
+    "google/auth": {
+        "version": "v1.5.1"
+    },
+    "google/cloud-core": {
+        "version": "v1.28.0"
+    },
+    "google/cloud-firestore": {
+        "version": "v1.5.2"
+    },
+    "google/common-protos": {
+        "version": "1.0"
+    },
+    "google/gax": {
+        "version": "1.0.2"
+    },
+    "google/grpc-gcp": {
+        "version": "0.1.4"
+    },
+    "google/protobuf": {
+        "version": "v3.7.1"
+    },
+    "grpc/grpc": {
+        "version": "1.19.0"
+    },
+    "guzzlehttp/guzzle": {
+        "version": "6.3.3"
+    },
+    "guzzlehttp/promises": {
+        "version": "v1.3.1"
+    },
+    "guzzlehttp/psr7": {
+        "version": "1.5.2"
+    },
+    "monolog/monolog": {
+        "version": "1.24.0"
+    },
     "ocramius/package-versions": {
         "version": "1.4.0"
     },
@@ -38,11 +77,23 @@
     "psr/container": {
         "version": "1.0.0"
     },
+    "psr/http-message": {
+        "version": "1.0.1"
+    },
     "psr/log": {
         "version": "1.1.0"
     },
     "psr/simple-cache": {
         "version": "1.0.1"
+    },
+    "ralouphie/getallheaders": {
+        "version": "2.0.5"
+    },
+    "ramsey/uuid": {
+        "version": "3.8.0"
+    },
+    "rize/uri-template": {
+        "version": "0.3.2"
     },
     "symfony/cache": {
         "version": "v4.2.8"

@@ -5,6 +5,7 @@
         "php": "^7.3.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "google/cloud-firestore": "^1.5",
         "symfony/console": "4.2.*",
         "symfony/dotenv": "4.2.*",
         "symfony/flex": "^1.1",
