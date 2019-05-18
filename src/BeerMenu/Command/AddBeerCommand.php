@@ -55,7 +55,7 @@ class AddBeerCommand extends Command
     ) {
         $beerName = $input->getArgument('beerName');
         if (isset($this->availableBeers[$beerName])) {
-            $this->beers->inStock($this->availableBeers[$beerName]);
+            $this->beers->inStock($this->availableBeers[strtolower($beerName)]);
         }
     }
 }
