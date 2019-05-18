@@ -58,6 +58,7 @@
         }
     },
     "require-dev": {
-        "behat/behat": "^3.5"
+        "behat/behat": "^3.5",
+        "friends-of-behat/symfony-extension": "^2.0"
     }
 }
