@@ -2,15 +2,15 @@
     "type": "project",
     "license": "proprietary",
     "require": {
-        "php": "^7.3.5",
+        "php": "^7.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "google/cloud-firestore": "^1.5",
-        "symfony/console": "4.2.*",
-        "symfony/dotenv": "4.2.*",
-        "symfony/flex": "^1.1",
+        "google/cloud-firestore": "^1.6",
+        "symfony/console": "4.3.*",
+        "symfony/dotenv": "4.3.*",
+        "symfony/flex": "^1.4",
         "symfony/framework-bundle": "4.2.*",
-        "symfony/yaml": "4.2.*"
+        "symfony/yaml": "4.3.*"
     },
     "config": {
         "bin-dir": "bin",
@@ -55,7 +55,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "4.2.*"
+            "require": "4.3.*"
         }
     },
     "require-dev": {

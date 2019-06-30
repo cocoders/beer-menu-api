@@ -12,7 +12,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class ResetDatabaseCommand extends Command
 {
     protected static $defaultName = 'app:reset-db';
-    private $resetter;
+    private Resetter $resetter;
 
     public function __construct(Resetter $resetter)
     {
