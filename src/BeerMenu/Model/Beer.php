@@ -6,8 +6,8 @@ namespace App\BeerMenu\Model;
 
 final class Beer
 {
-    private $name;
-    private $description;
+    private string $name;
+    private string $description;
 
     public function __construct(string $name, string $description)
     {

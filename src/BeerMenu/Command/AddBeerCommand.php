@@ -13,11 +13,8 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class AddBeerCommand extends Command
 {
-    /**
-     * @var Beers
-     */
-    private $beers;
-    private $availableBeers = [];
+    private Beers $beers;
+    private array $availableBeers = [];
 
     public function __construct(Beers $beers)
     {
@@ -33,7 +30,7 @@ class AddBeerCommand extends Command
                 'Harry',
                 'Harry wyjechał na studia do USA. Jako anglik pijał herbatę earl grey, ale musiał się dostosować do amerykanów, którzy bardziej niż herbatę, lubią piwo. Specjalnie dla Harry`ego uwarzyliśmy lekkie, jasne piwo o niskiej goryczy i wyraźnym, ale nie dominującym charakterze herbaty earl-grey.'
             ),
-            'nonsens Pils' => new Beer(
+            'nonsens_pils' => new Beer(
                 'Nonsens Pils',
                 'Klasyczny pils z małym twistem w postaci herbaty earl grey. Uwarzony dla Pubu Nonsens w Gdyni.'
             )

@@ -11,7 +11,7 @@ use App\BeerMenu\Query\CurrentMenuQuery;
 
 class InMemoryBeers implements Beers, CurrentMenuQuery, Resetter
 {
-    private $beers = [];
+    private array $beers = [];
 
     public function inStock(Beer $beer): void
     {

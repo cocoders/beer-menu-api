@@ -14,9 +14,9 @@ use Behat\Gherkin\Node\TableNode;
  */
 class FeatureContext implements Context
 {
-    private $beers;
-    private $currentMenuQuery;
-    private $resetter;
+    private Beers $beers;
+    private CurrentMenuQuery $currentMenuQuery;
+    private Resetter $resetter;
 
     public function __construct(
         Beers $beers,
